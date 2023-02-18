@@ -1,0 +1,225 @@
+/*
+    HEADINGS: Poppins
+    PARAGRAPHS: Ubuntu
+    HEADINGS LOGOS: DM Sans
+
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+
+    COLORS: #03001C ; #301E67 ; #5B8FB9 ; #B6EADA ; #DFE2E2
+    SECONDARY COLORS: #13005A ; #00337C ; #1C82AD ; #03C988 ; #0F0A3C
+*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+html{
+    background-color: #DFE2E2;
+    color: #03001C;
+}
+
+/*NAV BAR STYLES*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #301E67;
+    padding: 1.5rem 1.5rem;
+}
+nav .nav_heading a{
+    color: #DFE2E2;
+    text-decoration: none;
+}
+
+nav .nav_menu_items ul{
+    display: flex;
+    align-items: center;
+}
+
+nav .nav_menu_items ul a{
+    text-decoration: none;
+    color: #DFE2E2;
+}
+
+nav .nav_menu_items ul a li{
+    list-style: none;
+    padding: 0 1rem;
+    transition: .5s;
+}
+nav .nav_menu_items ul a li:hover{
+    color: #03C988;
+}
+
+/*HEADER STYLES*/
+header{
+    text-align: center;
+    padding: 1.5rem 1.5rem;
+    margin-top: 1rem;
+}
+
+header .header-big-heading, .header-middle-heading, p{
+    padding: 0.6rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    color: #03001C;
+}
+
+header .heading-button{
+    margin: 1rem 0;
+    width: 20%;
+    height: 3rem;
+    border: 2px solid #03001C;
+    border-radius: 20px;
+    background-color: #03C988;
+    font-weight: 500;
+    transition: .5s;
+}
+header .heading-button:hover{
+    background-color: #301E67;
+}
+header .heading-button a{
+    text-decoration: none;
+    color: #03001C;
+    display: block;
+    padding: 0.9rem 0.9rem;
+}
+
+header .heading-button a:hover{
+    color: #DFE2E2;
+}
+
+/*SECTION GITHUB RESOURCES*/
+
+.section-github-resources{
+    padding: 1.5rem 1.5rem;
+    background-color: #B6EADA;
+}
+
+.section-github-resources-heading{
+    padding: 1rem 0;
+}
+
+.section-github-resources .github-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.section-github-resources .github-row .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 18rem;
+    width: 15rem;
+    border: 2px solid #03001C;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.section-github-resources .github-row .card img{
+    width: 10rem;
+    height: 6rem;
+    margin: 0.5rem, 1.3rem;
+}
+
+.section-github-resources .github-row .card h4{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.section-github-resources .github-row .card p{
+    font-size: 0.8rem;
+}
+
+/*SECTION TWITTER RESOURCES*/
+
+.section-twitter-resources{
+    padding: 1.5rem 1.5rem;
+    background-color: #A2A8D3;
+}
+
+.section-twitter-resources-heading{
+    padding: 1rem 0;
+}
+
+.section-twitter-resources .github-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+.section-twitter-resources .github-row .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 25rem;
+    width: 15rem;
+    border: 2px solid #03001C;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.section-twitter-resources .github-row .card img{
+    width: 8rem;
+    height: 8rem;
+    margin: 0.5rem, 1.3rem;
+    border-radius: 70px;
+    padding-top: 1rem;
+}
+
+.section-twitter-resources .github-row .card h4{
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.section-twitter-resources .github-row .card p{
+    font-size: 0.8rem;
+}
+
+/*HEADINGS PROGRAMMING LANGUAGES*/
+
+.heading-prog-lang{
+    text-align: left;
+}
+
+/*TABLES*/
+table{
+    margin: 1.5rem 1.5rem;
+    border: 1px solid #404B69;
+    border-radius: 6px;
+    border-collapse: collapse;
+}
+
+table thead tr th, table tbody tr th{
+    border: 1px solid #404B69;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+table thead tr th td, table tbody tr td{
+    border: 1px solid #404B69;
+    font-family: 'DM Sans', sans-serif;
+    padding: 0.5rem;
+}
+
+/*FOOTER*/
+footer{
+    background-color: #404B69;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p{
+    color: #DFE2E2;
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;700&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <title>C# Cheat Sheet</title>
+</head>
+<body>
+    <!--NAV BAR-->
+    <nav>
+        <div class="nav_heading">
+            <a href="../index.html"><h1>My Cheat Sheet || Ricardo Atoche</h1></a>
+        </div>
+        <div class="nav_menu_items">
+            <ul>
+                <a href="./csharpPage.html"><li>C#</li></a>
+                <a href="./swiftPage.html"><li>Swift</li></a>
+                <a href="./javascriptPage.html"><li>JavaScript</li></a>
+            </ul>
+        </div>
+    </nav>
+
+    <!--HEADING PROGRAMMING LANGUAGE-->
+    <header class="heading-prog-lang">
+        <h2>C# Cheat Sheet</h2>
+        <p>C# is a general-purpose, type-safe, object-oriented programming language. It was developed around 2000 by Microsoft as part of its .NET initiative.</p>
+    </header>
+
+    <!--C# TABLE-->
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Topics</th>
+                    <th scope="col">Commands</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row" rowspan="3">Hello World</th>
+                    <td>Console.ReadLine()</td>
+                    <td>This method is used to get user input. The user input can be stored in a variable</td>
+                    <td>Console.WriteLine("Enter your name: ");<br> name = Console.ReadLine();</td>
+                </tr>
+                <tr>
+                    <td>Comments</td>
+                    <td>Comments are bits of text that are not executed.</td>
+                    <td>//This is a single line comment <br>/*Multiline comments <br> continues til reach<br> this symbol*/</td>
+                </tr>
+                <tr>
+                    <td>Console.WriteLine()</td>
+                    <td>This method is used ti print text to the console</td>
+                    <td>Console.WriteLine("Hello, World");<br>// Prints: Hello, World</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="7">Data Types and Variables</th>
+                    <td>Variables and Types</td>
+                    <td>A variable is a way to store data in the computer's memory. Declaring the types of variables allows the compiler to stop the program from being run when variables are used incorrectly.</td>
+                    <td>string foo = "Hello";<br>int x = 5;<br>double pi = 3.14;<br>Console.WriteLine(foo);<br>// Prints: Hello</td>
+                </tr>
+                <tr>
+                    <td>Math.Sqrt()</td>
+                    <td>Is a Math class method which is used to calculate the square root of the specified value.</td>
+                    <td>double x = 81;<br>Console.Write(Math.Sqrt());<br>// Prints: 9</td>
+                </tr>
+                <tr>
+                    <td>Math.Pow()</td>
+                    <td>Is a Math class method that is used to raise a number to a specified power. It returns a number of double type.</td>
+                    <td>double pow_ab = Math.Pow(6, 2);<br>Console.WriteLine(pow_ab);<br>// Prints: 36</td>
+                </tr>
+                <tr>
+                    <td>.toUpper()</td>
+                    <td>Is a string method that converts every character in a string to uppercase. If a character does not have an uppercase equivalent, it remains unchanged. For example, special symbols remain unchanged.</td>
+                    <td>string str2 = "This is C# Program xsdd_$#%";<br>// string converted to Upper case<br>string upperstr2 = str2.ToUpper();<br>//upperstr2 contains "THIS IS C# PROGRAM XSDD_$#%"</td>
+                </tr>
+                <tr>
+                    <td>IndexOf()</td>
+                    <td>It's a method is a string method used to find the index position of a specified character in a string. The method returns -1 if the character isn't found.</td>
+                    <td>string str = "Divyesh";<br>int index1 = str.IndexOf('s');<br>Console.WriteLine("The Index Value of character 's' is " + index1);<br>//The Index Value of character 's' is 5</td>
+                </tr>
+                <tr>
+                    <td>.toLower()</td>
+                    <td>is a string method that converts every character to lowercase. If a character does not have a lowercase equivalent, it remains unchanged. For example, special symbols remain unchanged.</td>
+                    <td>string mixedCase = "This is a MIXED case string."<br>// Call ToLower instance method, which returns a new copy.<br>string lower = mixedCase.ToLower();<br>//variable lower contains "this is a mixed case string."</td>
+                </tr>
+                <tr>
+                    <td>String Interpolation</td>
+                    <td>String interpolation provides a more readable and convenient syntax to create formatted strings. It allows us to insert variable values and expressions in the middle of a string so that we don't have to worry about punctuation or spaces.</td>
+                    <td>int id = 100;<br>string multipliedNumber = $"The multiplied ID is {id * 10}.";<br>Console.WriteLine(multipliedNumber);<br>Console.WriteLine(multipliedNumber);</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="4">Logic and Conditionals</th>
+                    <td>If Statements</td>
+                    <td>An if statement executes a block of code based on whether or not the boolean expression provided in the parentheses is true or false.</td>
+                    <td>if (true) {<br>// This code is executed.<br>Console.WriteLine<br>("Hello User!");<br>}<br><br>if (false) {<br>// This <br>code is skipped.<br>Console.WriteLine("This won't be seen:(");<br>}</td>
+                </tr>
+                <tr>
+                    <td>Else Clause</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Else if Clause</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Switch Statements</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <p>Made with ♥️ by Ricardo Atoche (@coding.inf.key) 2023</p>
+    </footer>
+</body>
+</html>
